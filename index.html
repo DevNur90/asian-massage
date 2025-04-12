@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Asian Massage Guide</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+   header {
+  position: relative;
+  background: url('hero.jpg') no-repeat center/cover;
+  padding: 100px 20px;
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here (0.3 - 0.6) */
+  z-index: -1;
+}
+
+
+    header h1 {
+      font-size: 2.8em;
+      margin: 0;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    }
+
+    header p {
+      font-size: 1.2em;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+
+    .section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: white;
+      border-radius: 12px;
+      margin: 30px auto;
+      max-width: 1100px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    .section:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+
+    .read-more-btn {
+  margin-top: 15px;
+  padding: 8px 16px;
+  background-color: #009688;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.read-more-btn:hover {
+  background-color: #00796b;
+}
+
+
+    .content {
+      flex: 1;
+      padding: 40px;
+    }
+
+    .content h2 {
+      font-size: 1.8em;
+      color: #00695c;
+      margin-bottom: 15px;
+    }
+
+    .content p {
+      font-size: 1em;
+      margin-bottom: 20px;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    .content a {
+      text-decoration: none;
+      background: #009688;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .content a:hover {
+      background: #00796b;
+    }
+
+    .image {
+      flex: 1;
+      height: 100%;
+    }
+
+    .image img {
+      width: 100%;
+      height: 100%;
+      border-radius: 0 12px 12px 0;
+      object-fit: cover;
+    }
+
+    .section:nth-child(even) .image img {
+      border-radius: 12px 0 0 12px;
+    }
+
+    @media (max-width: 768px) {
+      .section {
+        flex-direction: column;
+      }
+
+      .section:nth-child(even) {
+        flex-direction: column;
+      }
+
+      .image img {
+        border-radius: 0 0 12px 12px !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>A Comprehensive Guide to Asian Massage Modalities</h1>
+  <p>Explore ancient healing techniques from across Asia designed to enhance your well-being and balance.</p>
+</header>
+
+<!-- Thai Massage -->
+<div class="section">
+  <div class="content">
+    <h2>Traditional Thai Massage</h2>
+    <p class="summary">
+      Traditional Thai Massage, or Nuad Thai, is an ancient healing system from Thailand that blends pressure point therapy with deep stretching. Often described as "Thai yoga massage," the practitioner guides you through yoga-like stretches while applying rhythmic pressure. 
+    </p>
+    <p class="more-text" style="display: none;">
+     This technique combines elements of acupressure, Indian Ayurvedic principles, and assisted yoga postures, reflecting influences from neighboring India and China.Historically, Thai massage is said to have been founded by Jivaka, the physician to the Buddha over 2,500 years ago, and it has been passed down through generations as part of Thai traditional medicine. Today, it is even recognized by UNESCO as a part of the intangible cultural heritage of humanity.In a typical session, you remain fully clothed in loose attire, and the massage is performed on a mat on the floor without oils. The therapist uses hands, thumbs, elbows, knees, and feet to compress, pull, stretch, and rock your body. By pressing along energy lines known as Sen lines comparable to the meridians in Chinese medicine the practitioner stimulates the flow of vital energy. The result is an invigorating practice that not only relieves muscle tension but also improves flexibility and promotes overall balance.Clients often report feeling both relaxed and energized after a Thai massage. However, due to the deep stretches and occasional strong pressure, it is important to communicate any injuries or conditions to ensure the session is adapted to your needs.
+    </p>
+    <button class="read-more-btn" onclick="toggleText(this)">Read More</button>
+  </div>
+  <div class="image">
+    <img src="Thai.jpg" alt="Thai Massage">
+  </div>
+</div>
+
+<!-- Tui Na -->
+<div class="section">
+  <div class="content">
+    <h2>Chinese Tui Na Massage</h2>
+    <p class="summary">
+      Chinese Tui Na (pronounced "twee nah") is one of the pillars of Traditional Chinese Medicine (TCM) and is often described as therapeutic "medical massage." Its name, meaning "push and grasp," reflects the manual techniques used. Originating over 2,000 years ago, Tui Na has been used in Chinese hospitals and clinics to treat a variety of conditions.
+    </p>
+    <p class="more-text" style="display: none;">
+      Grounded in the principles of acupuncture, Tui Na aims to balance the flow of qi (vital energy) through the body's meridians using techniques such as brushing, kneading, pressing, rolling, and stretching. Unlike the continuous smooth strokes of a Swedish massage, Tui Na's approaches are more varied and might include targeted acupressure and even joint rotations that resemble physical therapy.A session often begins with an assessment of your symptoms, followed by a focused treatment on affected areas, be it back pain, neck stiffness, or joint issues. Although some techniques might feel intense initially, especially when applied to deeply knotted areas, the overall experience is designed to improve circulation, promote healing, and harmonize the body's internal energy.Tui Na is ideal for clients seeking a results-oriented treatment for specific ailments, but it may be less suited to those desiring a purely gentle, relaxing experience. As with any deep treatment, informing your therapist of any health conditions or injuries ensures that the techniques are properly adjusted.
+    </p>
+    <button class="read-more-btn" onclick="toggleText(this)">Read More</button>
+  </div>
+  <div class="image">
+    <img src="Chinese.jpg" alt="Tui Na Massage">
+  </div>
+</div>
+
+<!-- Shiatsu -->
+<div class="section">
+  <div class="content">
+    <h2>Japanese Shiatsu</h2>
+    <p class="summary">
+      Japanese Shiatsu, which literally means "finger pressure," evolved in Japan in the early 20th century and has gained worldwide recognition for its gentle yet effective approach. Rooted in older Japanese massage practices like Anma and sharing similarities with Chinese acupressure, Shiatsu applies steady pressure using the thumbs, fingers, palms, and sometimes even elbows.
+    </p>
+    <p class="more-text" style="display: none;">
+      The technique focuses on stimulating specific acupressure points and energy channels, also known as meridians. This rhythmic sequence of pressure is designed to clear blockages and balance the body's energy, helping to alleviate stress, reduce muscle tension, and improve overall vitality.In a typical session, you will either lie on a low futon mat or a massage table while remaining fully clothed. The environment is kept calm and soothing, enhancing the meditative effect of the treatment. Rather than using oils, the consistent, targeted pressure is enough to trigger your body's natural relaxation response.Japanese Shiatsu is particularly beneficial for those dealing with stress, back and neck pain, or chronic headaches. Since it is non-invasive and needle-free, it offers a comfortable introduction to acupressure techniques and is well-suited to 
+      
+    </p>
+    <button class="read-more-btn" onclick="toggleText(this)">Read More</button>
+  </div>
+  <div class="image">
+    <img src="Shiatsu.jpg" alt="Shiatsu Massage">
+  </div>
+</div>
+
+<!-- Abhyanga -->
+<div class="section">
+  <div class="content">
+    <h2>Ayurvedic Abhyanga</h2>
+    <p class="summary">
+     Ayurvedic Abhyanga Massage is a cornerstone of India's ancient healing system known as Ayurveda. The term Abhyanga means "massage" in Sanskrit, but it denotes a practice that involves the liberal application of warm, herbal oils over the entire body, aiming to nourish the body, mind, and spirit. 
+    </p>
+    <p class="more-text" style="display: none;">
+      Rooted in traditions that are over 3,000 years old, Abhyanga is often recommended as part of a daily self-care regimen. The therapist chooses an oil blend suited to your unique constitution (or dosha) with sesame oil being a popular choice for its grounding properties and applies it while performing long, flowing strokes. This process not only lubricates joints and enhances circulation but also supports detoxification by encouraging lymphatic flow.The massage is usually performed by one or two therapists who work synchronously to ensure every part of the body receives attention. Unlike intense deep tissue techniques, Abhyanga's pressure is light to moderate, making it a deeply soothing and meditative experience. After the massage, many Ayurvedic practices recommend a brief steam or warm towel treatment to help the oils penetrate further and flush out toxins.Clients love Abhyanga for its ability to calm the nervous system, improve sleep, reduce anxiety, and promote overall skin health. As the oil nourishes the skin and muscles, you emerge feeling both relaxed and rejuvenated, a true testament to the holistic nature of Ayurvedic wisdom.
+    </p>
+    <button class="read-more-btn" onclick="toggleText(this)">Read More</button>
+  </div>
+  
+  <div class="image">
+    <img src="Abhyanga.jpg" alt="Abhyanga Massage">
+  </div>
+</div>
+
+<!-- Korean Hand Therapy -->
+<div class="section">
+  <div class="content">
+    <h2>Korean Hand Therapy</h2>
+    <p class="summary">
+      Korean Hand Therapy (KHT), sometimes known as Korean Hand Acupressure or Koryo Hand Therapy, is a more modern therapeutic approach based on the concept that the hand is a microcosm of the entire body. Developed in the 1970s by Dr. Tae-Woo Yoo, KHT maps specific points on the hand that correspond to various organs and regions of the body.
+    </p>
+    <p class="more-text" style="display: none;">
+      During a session, the therapist examines your hands to identify areas of sensitivity and then uses acupressure techniques, often with the thumbs and fingers to stimulate targeted points. In some cases, tiny tools or magnets might be applied to prolong the therapeutic effect.A typical Korean Hand Therapy session lasts about 30 to 60 minutes and is often performed while you sit comfortably in a chair. The concentrated treatment on the hands can alleviate ailments such as headaches, sinus congestion, digestive issues, and even joint pain. Many clients discover that releasing tension in the hands triggers a broader sense of relaxation and well-being throughout the body.This modality is especially appealing if you prefer a non-invasive, focused treatment without the full-body exposure typical of other massages. It is an excellent complement to more extensive bodywork, offering a quick yet powerful burst of relief and balance.
+    </p>
+    <button class="read-more-btn" onclick="toggleText(this)">Read More</button>
+  </div>
+  
+  <div class="image">
+    <img src="Korean.jpg" alt="Korean Hand Therapy">
+  </div>
+</div>
+
+<!-- Balinese Massage -->
+<div class="section">
+  <div class="content">
+    <h2>Balinese Massage</h2>
+   <p class="summary">
+     Indonesian, or more specifically Balinese, Massage is renowned for its blend of techniques influenced by Ayurveda, Chinese acupressure, and native Indonesian practices. Originating on the beautiful island of Bali, this treatment is often associated with the luxurious spa experiences found at tropical resorts, complete with aromatic oils and soothing music. 
+    </p>
+    <p class="more-text" style="display: none;">
+      Balinese massage is typically performed on a table with the client draped in comfortable attire. Warm coconut oil, often infused with local herbs and fragrances like lemongrass, ylang-ylang, or sandalwood, is applied generously over the entire body. The therapist uses long, gliding strokes combined with kneading, acupressure, and gentle stretching techniques to relieve tension and improve circulation.The treatment's rhythm alternates between deep tissue work on areas of tension and lighter, soothing strokes that calm the body. Many clients report that this multi-dimensional approach not only alleviates muscle pain but also induces a deep sense of relaxation and mental clarity.Balinese Massage is ideal if you seek a full-body spa experience that is both therapeutic and indulgent. It caters to those needing stress relief, muscle relaxation, and a touch of exotic wellness, a perfect balance of physical and sensory rejuvenation.
+    </p>
+    <button class="read-more-btn" onclick="toggleText(this)">Read More</button>
+  </div>
+  
+  <div class="image">
+    <img src="Balinese.jpg" alt="Balinese Massage">
+  </div>
+</div>
+
+<!-- Tibetan Ku Nye -->
+<div class="section">
+  <div class="content">
+    <h2>Tibetan Ku Nye Massage</h2>
+    <p class="summary">
+      Tibetan Ku Nye Massage is a traditional healing therapy rooted in the ancient practices of Traditional Tibetan Medicine. The term "Ku Nye" translates to "oil massage," and the treatment involves generously applying warmed herbal oils and gentle manual techniques to balance the body's energy.
+    </p>
+    <p class="more-text" style="display: none;">
+      Drawing influences from Indian Ayurveda, Chinese medicine, and indigenous Tibetan practices, Ku Nye focuses on harmonizing the three humors, wind, bile, and phlegm, that, when imbalanced, lead to various physical and mental ailments. This healing modality is traditionally used to alleviate stress, improve circulation, and restore overall balance.A typical session begins with the application of therapeutic oils infused with Tibetan herbs, followed by massage strokes that include rubbing, kneading, and light acupressure. The session often extends to specific techniques such as gentle stretching and the use of mild heat from hot stones or compresses. Some treatments even conclude with a unique flour rub to remove excess oil and exfoliate the skin.Clients often remark on the deep sense of calm and revitalization experienced during and after a Ku Nye session. It is particularly beneficial for alleviating chronic stress, tension headaches, and joint stiffness, while simultaneously nourishing the skin and soothing the mind.
+    </p>
+    <button class="read-more-btn" onclick="toggleText(this)">Read More</button>
+  </div>
+
+  <div class="image">
+    <img src="Tibetan.jpg " alt="Tibetan Ku Nye Massage">
+  </div>
+</div>
+
+<!-- Conclusion Section -->
+<!-- Beautiful Conclusion Section -->
+<section style="background: linear-gradient(to right, #d1c4e9, #b2dfdb); padding: 60px 30px;">
+  <div style="max-width: 900px; margin: auto; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); text-align: center;">
+    
+    <div style="font-size: 3em; color: #009688; margin-bottom: 10px;">
+      <i class="fas fa-leaf"></i>
+    </div>
+
+    <h2 style="font-size: 2.2em; color: #4a148c; margin-bottom: 20px;">
+      Embrace the Ancient Healing Wisdom
+    </h2>
+    
+    <p style="font-size: 1.1em; color: #444; line-height: 1.8;">
+      From the energizing stretches of Thai Massage to the soothing herbal oils of Abhyanga, the world of Asian massage is beautifully diverse. Each tradition—Thai, Chinese, Japanese, Indian, Korean, Indonesian, and Tibetan—offers unique techniques that promote holistic wellness.
+      <br><br>
+      Understanding these practices helps you choose the best treatment—whether you're relieving pain, balancing energy, or simply relaxing. You may even combine methods, like a focused Korean Hand Therapy session followed by a full-body Balinese massage.
+      <br><br>
+      As you explore these timeless healing arts, allow yourself the gift of wellness. Let these ancient touch therapies guide you to a more peaceful, energized, and balanced life.
+    </p>
+    
+    <a href="#" style="display: inline-block; margin-top: 30px; padding: 12px 25px; background: #009688; color: white; text-decoration: none; border-radius: 30px; font-weight: bold; transition: background 0.3s ease;">
+      Discover Your Perfect Massage
+    </a>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer style="background: #004d40; color: white; padding: 40px 20px;">
+  <div style="max-width: 1100px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
+    <div style="flex: 1; min-width: 200px;">
+      <h3 style="margin-bottom: 10px;">Asian Massage Guide</h3>
+      <p style="font-size: 0.95em;">Promoting wellness through the ancient healing arts of Asia.</p>
+    </div>
+
+    <div style="flex: 1; min-width: 200px; text-align: center;">
+      <p style="margin-bottom: 10px;">Follow Us</p>
+      <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-instagram"></i></a>
+      <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-twitter"></i></a>
+    </div>
+
+    <div style="flex: 1; min-width: 200px; text-align: right;">
+      <p style="font-size: 0.85em;">&copy; 2025 Asian Massage Guide. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+<script>
+  function toggleText(btn) {
+    const moreText = btn.previousElementSibling;
+    if (moreText.style.display === "none") {
+      moreText.style.display = "block";
+      btn.textContent = "Read Less";
+    } else {
+      moreText.style.display = "none";
+      btn.textContent = "Read More";
+    }
+  }
+</script>
+
+
+</body>
+</html>
